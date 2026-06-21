@@ -1,0 +1,10 @@
+{
+  "name": "AI-powered study buddy",
+  "description": "An interactive, gamified study platform featuring real-time notes RAG, AI Voice tutoring, personalized learning analytics, study decks, and customizable companions.",
+  "requestFramePermissions": [
+    "microphone"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

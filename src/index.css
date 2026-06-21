@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #020617;
+  color: #e2e8f0;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+/* Custom Immersive UI helpers */
+.bg-glow {
+  background: radial-gradient(circle at 50% 50%, rgba(99, 102, 241, 0.15) 0%, transparent 70%);
+}
+
+.glass {
+  background: rgba(15, 23, 42, 0.65);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Stunning colorful light-mode glass */
+:root:not(.dark) .glass {
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(99, 102, 241, 0.14);
+}
+
+:root:not(.dark) .bg-glow {
+  background: radial-gradient(circle at 50% 50%, rgba(244, 63, 94, 0.08) 0%, transparent 65%);
+}
+
+.text-glow {
+  text-shadow: 0 0 10px rgba(129, 140, 248, 0.5);
+}
+
+:root:not(.dark) .text-glow {
+  text-shadow: 0 0 8px rgba(79, 70, 229, 0.25);
+}
+
+/* Futuristic grid dot pattern suitable for a robotics study companion */
+.tech-grid {
+  background-image: radial-gradient(rgba(99, 102, 241, 0.12) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+:root:not(.dark) .tech-grid {
+  background-image: radial-gradient(rgba(79, 70, 229, 0.08) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
